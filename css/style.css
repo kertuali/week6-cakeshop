@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    line-height: 2;
+}
+
+.header {
+    height: 95vh;
+    background-image:linear-gradient(to bottom right, #ffffff6e, rgba(0, 0, 0, 0.459)), url(../img/halal.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: rgb(226, 183, 43);
+    text-shadow: 0 0 3px purple, 0 0 5px black;
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation: moveInLeft 4s ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.3rem;
+    letter-spacing: 1.3rem;
+    animation: moveInRight 4s ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    border-bottom: 0.2rem solid pink;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem pink;
+    background-color: rgba(255, 0, 119, 0.39);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem pink;
+    transform: translateY(5px);
+}
+
+.main {
+    height: 95vh;
+    margin-top: -6rem;
+    background-color: rgb(144, 193, 236);
+    text-align: center;
+    padding-top: 10rem;
+    clip-path: polygon(0 12%, 100% 15%, 100% 97%, 0% 100%);
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(226, 183, 43);
+    text-shadow: 0 0 3px purple, 0 0 5px black;
+}
+
+.gallery {
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.gallery_photo {
+    width: 300px;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    outline-offset: 1rem;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgba(255, 192, 203, 0.568);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-4 {
+    width: 250px;
+    left: 0%;
+    top: 0%;
+}
+
+.gallery_photo-1 {
+    width: 250px;
+    left: 15%;
+    top: 15%;
+}
+
+.gallery_photo-2 {
+    width: 250px;
+    top: 30%;
+    left: 30%;
+}
+
+.gallery_photo-3 {
+    width: 250px;
+    left: 45%;
+    top: 15%;
+}
+
+.footer {
+    height: 250px;
+    text-align: center;
+    color: darkcyan;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.footer ul li{
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    transform: scale(1.1);
+    color: cyan;
+}
